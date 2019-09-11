@@ -58,7 +58,7 @@ class RawTextReader(Reader):
         self.language = language
 
         if language is None:
-            self.language = 'en'
+            self.language = 'fr'
 
     def read(self, text, **kwargs):
         """Read the input file and use spacy to pre-process.
