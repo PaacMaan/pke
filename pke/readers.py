@@ -70,8 +70,9 @@ class RawTextReader(Reader):
         """
 
         max_length = kwargs.get('max_length', 10**6)
-        nlp = spacy.load(self.language,
-                         max_length=max_length)
+        # nlp = spacy.load(self.language,
+                         # max_length=max_length)
+        nlp = spacy.load('fr_core_news_md', max_length=max_length)
         spacy_doc = nlp(text)
 
         sentences = []
